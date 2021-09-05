@@ -1,0 +1,62 @@
+{
+  "historyQuestions": [
+    { "question": "World War I began in which year?", "options": [1926, 1912, 1918, 1938], "answer": 1918 },
+    { "question": "Adolf Hitler was born in which country?", "options": ["Germany", "France", "England", "Austria"], "answer": "Austria" },
+    { "question": "John F. Kennedy was assassinated in:", "options": ["New York", "Austin", "Dallas", "Miami"], "answer": "Dallas" },
+    { "question": "Who fought in the war of 1812?", "options": ["Andrew Jackson", "Arthur Wellesley", "Otto von Bismarck", "Napoleon"], "answer": "Andrew Jackson" },
+    { "question": "Which general famously stated, 'I shall return?'", "options": ["Douglas MacArthur", "Omar Bradley", "George Patton", "Bull Halsey"], "answer": "Douglas MacArthur"},
+    { "question": "American involvement in the Korean War took place in which decade?", "options": ["1920s", "1960s", "1970s", "1950s"], "answer": "1950s" },
+    { "question": "The Battle of Hastings in 1066 was fought in which country?", "options": ["France", "Russia", "England", "Norway"], "answer": "England" },
+    { "question": "The Magna Carta was published by the King of which country?", "options": ["France", "Austria", "Italy", "England"], "answer": "England" },
+    { "question": "The Hundred Years War was fought between what two countries?", "options": ["Italy and Carthage", "England and Germany", "France and England", "Spain and France"], "answer": "France and England" },
+    { "question": "Who was the first Western explorer to reach China?", "options": ["Magellan", "Cook", "Marco Polo", "Sir Francis Drake"], "answer": "Marco Polo" }
+  ],
+  "gamesQuestions": [
+    { "question": "When was the first Call of Duty title released?", "options": [2005, 2003, 2002, 2001], "answer": 2003 },
+    { "question": "whos the main viliain in the original Mario game", "options": ["Bowser", "Bowser Jr", "King Boo", "Koopa Troop"], "answer": "Bowser" },
+    { "question": "whos the protagonist of the second Darksiders game", "options": ["Death", "War", "Fury", "Strife"], "answer": "Death" },
+    { "question": "This 1993 first person shooter game is widely credited for pioneering the genre", "options": ["Half-Life", "Quake", "Team Fortress", "Doom"], "answer": "Doom" },
+    { "question": "What does FPS stand for", "options": ["First Person Shooter", "First Player Sight", "First Player Shooter", "First Person Sniper"], "answer": "First Person Shooter" },
+    { "question": "Which all time classic FPS was released on the N64?", "options": ["System Shock", "Unreal Tournament", "GoldenEye 007", "Hexen II"], "answer": "GoldenEye 007" },
+    { "question": "Which of these FPS games was released first?", "options": ["Doom", "Quake", "Duke Nukem 3D", "Wolfenstein 3D"], "answer": "Wolfenstein 3D" },
+    { "question": "Which FPS lets you trade skins for real money", "options": ["Battlefield", "Counter-Strike", "Homefront", "Heretic"], "answer": "Counter-Strike" },
+    { "question": "Call of Duty: Zombies was released on which platform?", "options": ["Windows PC", "iOS", "PS4", "Xbox"], "answer": "iOS" },
+    { "question": "who betrayed ghost in modern warfare 2?", "options": ["Shepherd", "Roach", "Soap", "Captain John Price"], "answer": "Shepherd" }
+  ],
+  "religionQuestions": [
+    { "question": "Which is the largest religion in the world in terms of the number of believers?", "options": ["Christianity", "Islam", "Buddhism", "Hinduism"], "answer": "Christianity" },
+    { "question": "Which four-letter word beginning with ‘H’ is a term used for the yearly Islamic pilgrimage to Mecca?", "options": ["Hajj", "Hadd", "Heid", "Haid"], "answer": "Hajj"},
+    { "question": "Which is the holiest book of Judaism?", "options": ["The Torah", "The Quran", "The Bible", "The Talmud"], "answer": "The Torah" },
+    { "question": "What is the fastest growing religion in the world?", "options": ["Islam", "Chirsitanity", "Buddhism", "Hinduism"], "answer": "Islam" },
+    { "question": "Which is the Holy book of islam?", "options": ["The Bible", "The Quran", "The Torah", "The Talmud"], "answer": "The Quran" },
+    { "question": "Which religion is most popular in Indonesia?", "options": ["Buddhism", "Hinduism", "Islam", "Christianity"], "answer": "Islam" },
+    { "question": "What is Ramadan?", "options": ["The Islamic holy month", "A Jewish day of atonement", "The Hindu festival of lights", "The Christian holy month"], "answer": "The Islamic holy month" },
+    { "question": "which religion is most popular in Pakistan?", "options": ["Christianity", "Islam", "Buddhism", "Hinduism"], "answer": "Islam" },
+    { "question": "which of these is the king of gods in ancient Greek mythology?", "options": ["Zeus", "Mars", "Apollo", "Ares"], "answer": "Zeus" },
+    { "question": "Which religion is most popular in india?", "options": ["Christianity", "Islam", "Buddhism", "Hinduism"], "answer": "Hinduism" }
+  ],
+  "sportsQuestions": [
+    { "question": "How many football players should each team have on the field at the start of each match?", "options": [8, 10, 11, 5], "answer": 11 },
+    { "question": "When Michael Jordan played for the Chicago Bulls, how many NBA Championships did he win?", "options": [3, 7, 6, 4], "answer": 6 },
+    { "question": "What country won the very first FIFA World Cup in 1930", "options": ["Brazil", "Germany", "Argentina", "Uruguay"], "answer": "Uruguay" },
+    { "question": "Which boxer was known as 'The Greatest' and The People's Champion", "options": ["Mike Tyson", "Muhammad Ali", "Floyd Mayweather", "Manny Pacquiao"], "answer": "Muhammad Ali" },
+    { "question": "In what year was the first-ever Wimbledon Championship held?", "options": [1899, 1877, 1861, 1858], "answer": 1877 },
+    { "question": "Which racer holds the record for the most Grand Prix wins?", "options": ["Lewis Hamilton", "Sebastian Vettel", "Alain Prost", "Michael Schumacher"], "answer": "Lewis Hamilton" },
+    { "question": "Which Jamaican runner is an 11-time world champion and holds the record in the 100 and 200-meter race?", "options": ["Usain Bolt", "Nesta Carter", "Asafa Powell", "Yohan Blake"], "answer": "Usain Bolt" },
+    { "question": "What sport was Jesse Owens involved in?", "options": ["Track and field", "Football", "Baseball", "Skating"], "answer": "Track and field" },
+    { "question": "Which hockey team did Wayne Gretzky play for in the ‘80s?", "options": ["Philadelphia Flyers", "Edmonton Oilers", "Atlanta Flames", "St. Louis Blues"], "answer": "Edmonton Oilers" },
+    { "question": "Which Williams sister has won more Grand Slam titles?", "options": ["Serena", " Venus", "Kristen", "Madison"], "answer": "Serena" }
+  ],
+  "scienceQuestions": [
+    { "question": "At what temperature are Farenheit and Celsius equal to each other?", "options": [60, 40, -20, -40], "answer": -40 },
+    { "question": "Which planet has the most moons?", "options": ["Saturn", "Jupiter", "Venus", "Urans"], "answer": "Jupiter" },
+    { "question": "In the periodic table, what's the symbol for zinc?", "options": ["Zn", "Zc", "Ze", "Za"], "answer": "Zn" },
+    { "question": "What type of animal is a barramundi", "options": ["Fish", "Ocotupus", "Squid", "Crab"], "answer": "Fish" },
+    { "question": " Where on the human body would you find the papillae?", "options": ["Tongue", "Eyelids", "Ears", "Nose"], "answer": "Tongue" },
+    { "question": "Who was the ancient Greek god of medicine?", "options": ["Zeus", "Ares", "Ascepius", "Poseidon"], "answer":  "Ascepius" },
+    { "question": " Umami is the name of one of the five basic what?", "options": ["Senses", "Tastes", "Hearings", "Sightings"], "answer": "Tastes" },
+    { "question": "What type of sugar does the brain need for energy?", "options": ["Glucose", "Sucrose", "Fructose", "Lactose"], "answer": "Glucose" },
+    { "question": "Out of the seven colours of the rainbow, which one is in the middle?", "options": ["Pink", "Purple", "Red", "Green"], "answer": "Green" },
+    { "question": " In computer science, what does USB stand for?", "options": ["Universal Serial Bus", "Universal Serial Bug", "Universal Series Bus", "Universal Series Bug"], "answer": "Universal Serial Bus" }
+  ]
+}

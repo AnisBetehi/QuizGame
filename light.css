@@ -1,0 +1,11 @@
+:root {
+  --bgColor: #f0f0f0;
+  --textColor: rgb(55, 67, 97);
+  --btnTextColor: #eee6e6;
+  --buttonColor: #5351ac;
+  --titleColor: #5351ac;
+  --IconColor: #ffffff;
+  --settingsBgColor: #5351ac;
+  --borderColor: rgba(212, 193, 193, 0.3);
+  --shadowColor: rgba(0, 0, 0, 0.3);
+}

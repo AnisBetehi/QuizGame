@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="" class='current-theme'>
+</head>
+<body>
+
+
+    <!--Audios-->
+    <audio src="./Sounds/click.ogg" class="click"></audio>
+    <audio src="./Sounds/correct answer.mp3" class="correct-answer"></audio>
+    <audio src="./Sounds/wrong answer.mp3" class="wrong-answer"></audio>
+    <audio src="./Sounds/background music.mp3" class="music" autoplay loop></audio>
+
+
+    <!--Settings Buttons-->
+   
+    <div class="choose-category">
+        <h1>Welcome</h1>
+        <h5>Pick a Category</h5>
+
+        <div class="categories">
+
+            <div class="category">
+               <div class="title">
+                    <div class="categoryIcon"><i class="fas fa-swimmer"></i></div>
+                    <h1 class="category-name">Sports</h1>
+               </div>
+                <span class="category-progress"></span>
+            </div>
+
+            <div class="category">
+                <div class="title">
+                    <div class="categoryIcon"><i class="fas fa-book-open"></i></div>
+                    <h1 class="category-name">History</h1>
+                </div>
+                <span class="category-progress"></span>
+            </div>
+
+            <div class="category">
+                <div class="title">
+                    <div class="categoryIcon"><i class="fas fa-quran"></i></div>
+                    <h1 class="category-name">Religion</h1>
+                </div>
+                <span class="category-progress"></span>
+            </div>
+
+            <div class="category">
+                <div class="title">
+                    <div class="categoryIcon"><i class="fas fa-gamepad"></i></div>
+                    <h1 class="category-name">Games</h1>
+                </div>
+                <span class="category-progress"></span>
+            </div>
+
+            <div class="category">
+                <div class="title">
+                    <div class="categoryIcon"><i class="fas fa-flask"></i></div>
+                    <h1 class="category-name">Science</h1>
+                </div>
+                <span class="category-progress"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="welcome-buttons hidden">
+        <button id='start-game'>New Game!</button>
+        <button id='continue' class='inactive'>Continue ?</button>    
+    </div>
+
+
+    <div class="questions-container hidden">    
+        <div class="quiz">
+            <h1 id='score'></h1>
+            <div class="progress-bar">
+            </div>
+            <div class="question">
+                <h1></h1>
+            </div>
+    
+            <div class="answers">
+                <div class="a1"></div>
+                <div class="a2"></div>
+                <div class="a3"></div>
+                <div class="a4"></div>
+            </div>
+
+            <div class="buttons">
+                <button id='main-menu'>Main Menu</button>
+                <button id='next-button' class='hidden'></button>              
+            </div>
+        </div>
+
+        
+    </div>
+
+  
+
+    <div class="settings shrink">
+
+        <div class="settings-button">
+            <i class="fas fa-cog" ></i>
+        </div>
+
+        <div class="settingsButtons">
+            <button class='volumeButton'><i class="fas fa-volume-down"></i></button>
+            <button class='themeButton'><i class="fas fa-sun"></i></button>
+            <button class='musicButton'><i class="fas fa-music"></i><span class='slash'></span></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

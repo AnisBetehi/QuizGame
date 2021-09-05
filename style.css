@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+:root {
+  --bgColor: #314964;
+  --textColor: white;
+  --buttonColor: #c9708f;
+  --btnTextColor: #ffffff;
+  --titleColor: #fc85ae;
+  --IconColor: #fcbdd3;
+  --settingsBgColor: #273c53;
+  --borderColor: rgba(212, 193, 193, 0.3);
+  --shadowColor: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT sans";
+  transition: 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-color: var(--bgColor);
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+
+.settings {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  padding: 3px;
+  background: var(--settingsBgColor);
+  border-radius: 20px;
+  height: 190px;
+  overflow: hidden;
+  transform-origin: 0 0;
+}
+
+.settings-button {
+  font-size: 40px;
+}
+
+.settings-button,
+.volumeButton,
+.musicButton,
+.themeButton {
+  outline: none;
+  background: transparent;
+  color: var(--IconColor);
+  cursor: pointer;
+  border: none;
+  transition: none;
+}
+
+.settings-button,
+.volumeButton,
+.musicButton,
+.themeButton {
+  transform: scale(0.85);
+}
+
+.volumeButton {
+  padding: 2px;
+  font-size: 1.7rem;
+}
+
+.musicButton {
+  padding: 2px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.musicButton .slash {
+  position: absolute;
+  height: 5px;
+  width: 75%;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--IconColor);
+  transition: 0.3s ease;
+  transform: translate(-45%, -35%) rotate(45deg);
+}
+
+.themeButton {
+  padding: 2px;
+  font-size: 1.7rem;
+}
+
+.settingsButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.choose-category {
+  width: 350px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  transition: 0.5s ease 0.3s;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.choose-category > h1 {
+  color: var(--textColor);
+  font-size: 3rem;
+}
+
+.choose-category > h5 {
+  color: var(--titleColor);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.categories {
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 2px 2px 20px var(--shadowColor);
+}
+
+.category {
+  color: white;
+  width: 100%;
+  text-align: start;
+  background-color: var(--bgColor);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-weight: 500;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.categoryIcon {
+  margin-right: 10px;
+  color: var(--titleColor);
+}
+
+.category:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.category:hover {
+  filter: brightness(120%);
+}
+
+.category-name {
+  color: var(--titleColor);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.category-progress {
+  color: var(--textColor);
+  font-size: 0.75rem;
+}
+
+.welcome-buttons {
+  position: fixed;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#start-game,
+#continue,
+#next-button,
+#main-menu {
+  text-align: center;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  color: var(--btnTextColor);
+  background-color: var(--buttonColor);
+  margin: 0 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 2px 2px 30px var(--shadowColor);
+}
+
+#next-button,
+#main-menu {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#start-game:hover,
+#continue:hover {
+  filter: brightness(70%);
+}
+
+:is(#next-button, #main-menu):hover {
+  filter: brightness(80%);
+}
+
+#continue.inactive {
+  filter: brightness(50%);
+  pointer-events: none;
+}
+
+.questions-container {
+  position: relative;
+  width: 40%;
+  transition: 0.5s ease 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.questions-container .quiz {
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: var(--bgColor);
+  box-shadow: 2px 2px 30px var(--shadowColor);
+}
+
+.questions-container .question {
+  width: 100%;
+  font-size: 0.63rem;
+  color: var(--textColor);
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3.5rem 0.5rem 3rem;
+  margin-top: 30px;
+}
+
+#score {
+  position: absolute;
+  right: 20px;
+  color: var(--titleColor);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  margin-bottom: 10px;
+  height: 3px;
+  background-color: var(--titleColor);
+}
+.answers {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answers div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.3rem 1.5rem;
+  border: 2px solid var(--borderColor);
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.answers div:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+/* Utility classes */
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.shrink {
+  height: 58px;
+}
+
+.answers div.correct {
+  background-color: rgba(1, 126, 1, 0.2);
+  pointer-events: none;
+  transition-duration: 0.2s;
+}
+
+.answers div.wrong {
+  background-color: rgb(255, 0, 0, 0.2);
+  pointer-events: none;
+  transition-duration: 0.2s;
+}
+
+.answers div.inactive {
+  filter: brightness(80%);
+  pointer-events: none;
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 1024px) {
+  .questions-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  #start-game,
+  #continue {
+    font-size: 0.9rem;
+  }
+
+  .settings-button,
+  .volumeButton,
+  .musicButton,
+  .themeButton {
+    transform: scale(0.8);
+  }
+
+  .questions-container {
+    width: 90%;
+  }
+
+  .settings {
+    padding: 2px;
+    height: 200px;
+    right: 20px;
+    transform: scale(0.9);
+  }
+
+  .questions-container .question {
+    font-size: 9px;
+  }
+
+  .answers div {
+    font-size: 14px;
+  }
+  .shrink {
+    height: 55px;
+  }
+
+  .answers {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 5px;
+  }
+
+  .answers div {
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .choose-category {
+    width: 80%;
+  }
+
+  .category-name {
+    font-size: 16px;
+  }
+
+  .settings {
+    transform: scale(0.7);
+    right: 10px;
+  }
+}
