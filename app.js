@@ -97,7 +97,7 @@ function toggleTheme(theme) {
     const darkThemeIcon = '<i class="fas fa-moon"></i>';
     const lightThemeIcon = '<i class="fas fa-sun"></i>';
     localStorage.setItem('theme', theme)
-    theme == 'dark' ? themeButton.innerHTML = darkThemeIcon : themeButton.innerHTML = lightThemeIcon;
+    theme == 'dark' ? themeButton.innerHTML = lightThemeIcon : themeButton.innerHTML = darkThemeIcon;
     if (theme == 'dark') {
         currentTheme.href = "";
     } else {
@@ -167,15 +167,6 @@ class Game {
         quizContainer.classList.remove('hidden');
     }
 
-    updateGame(newQuestions, newCurrentQuestion, newCategory, newScore) {
-        this.questions = newQuestions;
-        this.currentQuestion = newCurrentQuestion;
-        this.options = newQuestions[newCurrentQuestion].options;
-        this.answer = newQuestions[newCurrentQuestion].answer;
-        this.category = newCategory;
-        this.score = newScore
-    }
-
     HandleQuestionUI() {
         optionsContainer.forEach(option => {
             option.classList.remove('correct');
@@ -205,7 +196,7 @@ class Game {
             localStorage.setItem(`${game.category}QuestionsIndex`, game.currentQuestion);
             nextButton.classList.remove('hidden');
             nextButton.innerHTML = 'You Win';
-        } else if (option.innerHTML == game.questions[game.currentQuestion].answer && game.    currentQuestion != game.questions.length) {
+        } else if (option.innerHTML == game.questions[game.currentQuestion].answer && game.currentQuestion != game.questions.length) {
             playCorrectAnswerSound();
             game.currentQuestion++;
             game.score++;
@@ -234,7 +225,7 @@ let fetchQuestions = async () => {
     let data = await fetch('./questions.json');
     let questions = await data.json();
     //assign the questions to variables
-    let {historyQuestions, sportsQuestions, scienceQuestions, gamesQuestions, religionQuestions} = questions;
+    let { historyQuestions, sportsQuestions, scienceQuestions, gamesQuestions, religionQuestions } = questions;
 
     updateProgressUI(historyQuestions, sportsQuestions, scienceQuestions, gamesQuestions, religionQuestions);
 
@@ -332,10 +323,10 @@ let fetchQuestions = async () => {
 
     nextButton.addEventListener('click', () => {
         playClickSound();
-        if (nextButton.innerHTML == 'Restart') return startGameBtn.click();  
-        if (nextButton.innerHTML == 'You Win') return mainMenuButton.click();  
+        if (nextButton.innerHTML == 'Restart') return startGameBtn.click();
+        if (nextButton.innerHTML == 'You Win') return mainMenuButton.click();
         return game.HandleQuestionUI();
-     
+
     })
 
 }
@@ -380,15 +371,15 @@ function shuffle(array) {
 function updateProgressUI(historyQuestions, sportsQuestions, scienceQuestions, gamesQuestions, religionQuestions) {
     progresses.forEach(progress => {
         if (progress.previousElementSibling.querySelector('.category-name').innerHTML == 'History') {
-            progress.innerHTML = `Progress: ${parseInt(historyQuestionsIndex) + 1|| 1}/${historyQuestions.length}`
+            progress.innerHTML = `Progress: ${parseInt(historyQuestionsIndex) + 1 || 1}/${historyQuestions.length}`
         } else if (progress.previousElementSibling.querySelector('.category-name').innerHTML == 'Science') {
-            progress.innerHTML = `Progress: ${parseInt(scienceQuestionsIndex) + 1|| 1}/${scienceQuestions.length}`
+            progress.innerHTML = `Progress: ${parseInt(scienceQuestionsIndex) + 1 || 1}/${scienceQuestions.length}`
         } else if (progress.previousElementSibling.querySelector('.category-name').innerHTML == 'Religion') {
-            progress.innerHTML = `Progress: ${parseInt(religionQuestionsIndex) + 1|| 1}/${religionQuestions.length}`
+            progress.innerHTML = `Progress: ${parseInt(religionQuestionsIndex) + 1 || 1}/${religionQuestions.length}`
         } else if (progress.previousElementSibling.querySelector('.category-name').innerHTML == 'Games') {
-            progress.innerHTML = `Progress: ${parseInt(gamesQuestionsIndex) + 1|| 1}/${gamesQuestions.length}`
+            progress.innerHTML = `Progress: ${parseInt(gamesQuestionsIndex) + 1 || 1}/${gamesQuestions.length}`
         } else if (progress.previousElementSibling.querySelector('.category-name').innerHTML == 'Sports') {
-            progress.innerHTML = `Progress: ${parseInt(sportQuestionsIndex) + 1|| 1}/${sportsQuestions.length}`
+            progress.innerHTML = `Progress: ${parseInt(sportQuestionsIndex) + 1 || 1}/${sportsQuestions.length}`
         }
     })
 }
